@@ -70,7 +70,6 @@ LUA_FUNCTION( GetSoundScape ) {
 		//Msg( "Could not get the soundscape Entity!\n" );
 		LUA->Pop();
 		CBaseHandle* invalidHandle = new CBaseHandle();
-		CBaseEntity* invalidEntity = GetEntityFromBaseHandle( *invalidHandle );
 		LUA->PushUserType( new CBaseHandle(), GarrysMod::Lua::Type::Entity );
 		return 1;
 	}
@@ -126,4 +125,5 @@ GMOD_MODULE_OPEN() {
 GMOD_MODULE_CLOSE() {
 	Msg( "Unloaded soundscape fn\n" );
 	return 0;
+
 }
