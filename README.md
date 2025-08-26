@@ -7,6 +7,14 @@ your server.
 This is a **server-only** module since client-side binary modules are too much  
 of a hassle to distribute.  
 
+## Specifications
+This module was built for 32-bit (base branch) servers.  It will not work on  
+64-bit games or servers.  
+I tried building for 64-bit and it failed to build, so I didn't bother.  
+This module uses **manual offsets** that were obtained on 2025.08.26.  
+EXE version 2025.03.26 and EXE build 9748.  
+After updates, it is possible this module will not work.  
+
 ## Installation and Running
 The easiest way to use this module is to download the DLL file from the Releases  
 section on the right.  
