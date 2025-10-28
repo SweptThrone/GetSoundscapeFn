@@ -1,8 +1,9 @@
-# GetSoundscapeFn
+# GetSoundscapeFn — Dev
 Garry's Mod binary module for getting the player's active soundscape entity.  
+This is the **dev build** of the module.  
 
-⚠️ **This module WILL stop working when the next Garry's Mod**  
-**update is released.  I'll figure it out when I get around to it.** ⚠️
+⚠️ **This module might stop working when dev goes to main branch.**  
+**I'll figure it out when I get around to it.** ⚠️
 
 ## Summary  
 This Garry's Mod binary module adds the function `Player.GetSoundscapeEntity` to  
