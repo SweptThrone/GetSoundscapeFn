@@ -76,7 +76,16 @@ LUA_FUNCTION( GetSoundScape ) {
 
 	LUA->Pop(); // pop the player argument
 
-	eSoundscape->PushEntity();
+	/*
+	`wtf???' you say
+	well i say the same thing.
+	i'm not super well-versed in this type of thing,
+	but i think a change was made to CBaseEntity's vtable
+	that resulted in each method being pushed one down somewhere.
+	so this works, but it's definitely really disgusting to look at.
+	i'm pretty sure danielga has to update the sourcesdk-minimal to fix this.
+	*/
+	eSoundscape->SetPhysObject( NULL, NULL );
 
 	return 1;
 }
@@ -127,3 +136,4 @@ GMOD_MODULE_CLOSE() {
 	return 0;
 
 }
+
