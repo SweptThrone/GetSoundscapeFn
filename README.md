@@ -2,8 +2,8 @@
 Garry's Mod binary module for getting the player's active soundscape entity.  
 This is the **dev build** of the module.  
 
-⚠️ **This module might stop working when dev goes to main branch.**  
-**I'll figure it out when I get around to it.** ⚠️
+⚠️ **This module works, but the source code looks kinda gross.**  
+**I think I should open an issue but I don't know enough.** ⚠️
 
 ## Summary  
 This Garry's Mod binary module adds the function `Player.GetSoundscapeEntity` to  
@@ -29,7 +29,7 @@ Place this DLL in your game/server's `garrysmod/lua/bin` folder.  If you do not
 have a `bin` folder, create it.  
 In case you don't know, the DLL file for Linux is really an SO file, renamed,  
 so **do not** rename this module for Linux.  
-In a Lua file somewhere, add `require( "getsoundscapefn" )` before any time you  
+In a Lua file somewhere, add `require( "getsoundscapefndev" )` before any time you  
 use `player:GetSoundscapeEntity()`.
 
 ## Notes
