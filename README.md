@@ -2,8 +2,7 @@
 Garry's Mod binary module for getting the player's active soundscape entity.  
 This is the **dev build** of the module.  
 
-⚠️ **This module works, but the source code looks kinda gross.**  
-**I think I should open an issue but I don't know enough.** ⚠️
+⚠️ **This module works, but the source code looks kinda gross.** ⚠️
 
 ## Summary  
 This Garry's Mod binary module adds the function `Player.GetSoundscapeEntity` to  
