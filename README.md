@@ -1,9 +1,6 @@
 # GetSoundscapeFn
 Garry's Mod binary module for getting the player's active soundscape entity.  
 
-⚠️ **This module has stopped working since the Nov2025 Garry's Mod**  
-**update was released.  The [dev](https://github.com/SweptThrone/GetSoundscapeFn/tree/dev) branch of this repo has a fix.** ⚠️
-
 ## Summary  
 This Garry's Mod binary module adds the function `Player.GetSoundscapeEntity` to  
 your server.  
@@ -14,8 +11,8 @@ of a hassle to distribute.
 This module was built for 32-bit (base branch) servers.  It will not work on  
 64-bit games or servers.  
 I tried building for 64-bit and it failed to build, so I didn't bother.  
-This module uses **manual offsets** that were obtained on 2025.08.26.  
-EXE version 2025.03.26 and EXE build 9748.  
+This module uses **manual offsets** that were obtained on 2026.04.29.  
+EXE version 2026.04.23 and EXE build 10029.  
 After updates, it is possible this module will not work.  
 This module was built as `ReleaseWithSymbols`.
 
