@@ -21,11 +21,12 @@ IVEngineServer* engineServer = nullptr;
 
 // define some manual offsets
 // methods from the SDK seem to not work
+// LINUX OFFSET IS UNTESTED
 #ifdef _WIN32
-	ptrdiff_t mAudioOffset = 0x218C;
+	ptrdiff_t mAudioOffset = 0x21AC;
 	ptrdiff_t soundscapeEntOffset = 0x6C;
 #elif defined( __linux__ )
-	ptrdiff_t mAudioOffset = 0x21A0;
+	ptrdiff_t mAudioOffset = 0x21C0;
 	ptrdiff_t soundscapeEntOffset = 0x6C;
 #endif
 
@@ -69,14 +70,13 @@ LUA_FUNCTION( GetSoundScape ) {
 	if ( !eSoundscape ) {
 		//Msg( "Could not get the soundscape Entity!\n" );
 		LUA->Pop();
-		CBaseHandle* invalidHandle = new CBaseHandle();
 		LUA->PushUserType( new CBaseHandle(), GarrysMod::Lua::Type::Entity );
 		return 1;
 	}
 
 	LUA->Pop(); // pop the player argument
 
-	eSoundscape->PushEntity();
+	eSoundscape->SetPhysObject( NULL, NULL );
 
 	return 1;
 }
@@ -125,5 +125,4 @@ GMOD_MODULE_OPEN() {
 GMOD_MODULE_CLOSE() {
 	Msg( "Unloaded soundscape fn\n" );
 	return 0;
-
 }
