@@ -21,12 +21,11 @@ IVEngineServer* engineServer = nullptr;
 
 // define some manual offsets
 // methods from the SDK seem to not work
-// LINUX OFFSET IS UNTESTED
 #ifdef _WIN32
 	ptrdiff_t mAudioOffset = 0x21AC;
 	ptrdiff_t soundscapeEntOffset = 0x6C;
 #elif defined( __linux__ )
-	ptrdiff_t mAudioOffset = 0x21C0;
+	ptrdiff_t mAudioOffset = 0x21AC;
 	ptrdiff_t soundscapeEntOffset = 0x6C;
 #endif
 
