@@ -11,8 +11,8 @@ of a hassle to distribute.
 This module was built for 32-bit (base branch) servers.  It will not work on  
 64-bit games or servers.  
 I tried building for 64-bit and it failed to build, so I didn't bother.  
-This module uses **manual offsets** that were obtained on 2026.04.29.  
-EXE version 2026.04.23 and EXE build 10029.  
+This module uses **manual offsets** that were obtained on 2026.05.01.  
+EXE version 2026.04.30 and EXE build 10034.  
 After updates, it is possible this module will not work.  
 This module was built as `ReleaseWithSymbols`.
 
