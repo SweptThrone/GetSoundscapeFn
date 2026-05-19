@@ -75,6 +75,9 @@ LUA_FUNCTION( GetSoundScape ) {
 
 	LUA->Pop(); // pop the player argument
 
+	// danielga's sourcesdk-minimal has an outdated entity vtable
+	// so SetPhysObject is actually PushEntity
+	// so this line pushes the entity
 	eSoundscape->SetPhysObject( NULL, NULL );
 
 	return 1;
